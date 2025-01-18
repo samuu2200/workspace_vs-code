@@ -28,6 +28,23 @@ public class Utilidades {
         return valoresArr;
     }
 
+    // Recorremos el array y devolvemos el número mayor
+    public static int[] getMayorMenor(int[] valoresArr) {
+        int numMayor = valoresArr[0];
+        int numMenor = valoresArr[0];
+        // Recorremos el array
+        for (int valor : valoresArr) {
+            if (valor > numMayor) {
+                numMayor = valor;
+            }
+            if (valor < numMenor) {
+                numMenor = valor;
+            }
+        }
+
+        return new int[] {numMayor, numMenor};
+    }
+
     // Recorremos el array y sumamos sus valores
     public static int getSumaArr(int[] valores) {
         int suma = 0;
