@@ -28,4 +28,13 @@ public class Utilidades {
         return valoresArr;
     }
 
+    // Recorremos el array y sumamos sus valores
+    public static int getSumaArr(int[] valores) {
+        int suma = 0;
+        for (int valor : valores) {
+            suma += valor;
+        }
+        return suma;
+    }
+
 }

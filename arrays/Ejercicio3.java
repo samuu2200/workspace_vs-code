@@ -12,7 +12,13 @@ public class Ejercicio3 {
         System.out.println("Contenido del array");
         for (int valores : valoresArr) {
             System.out.print(valores + ", ");
+
         }
+        
+        // Devolvemos la suma del array
+        System.out.println("\nLa suma de valores contenidos por el array es: ");
+        int suma = Utilidades.getSumaArr(valoresArr);
+        System.out.println(suma);
         
     }
 
