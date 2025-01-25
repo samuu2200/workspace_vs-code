@@ -28,7 +28,24 @@ public class Utilidades {
         return valoresArr;
     }
 
-    // Recorremos el array y devolvemos el número mayor
+    // Función que recibe un array e invierte sus valores
+    public static int[] arrInvertido(int[] numArr) {
+        System.out.println("Array original");
+        System.out.println(numArr);
+
+
+        for (int i = 0; i < numArr.length / 2; i++) {
+            int temp = numArr[i];
+            numArr[i] = numArr[numArr.length - 1 - i];
+            numArr[numArr.length - 1 - i] = temp;
+
+        }
+        System.out.println("Array invertido");
+        System.out.println(numArr);
+        return numArr;
+    }
+
+    // Recorremos el array y devolvemos el número mayor y menor
     public static int[] getMayorMenor(int[] valoresArr) {
         int numMayor = valoresArr[0];
         int numMenor = valoresArr[0];
