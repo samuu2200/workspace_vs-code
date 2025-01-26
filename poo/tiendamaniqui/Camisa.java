@@ -4,7 +4,15 @@ public class Camisa {
     private String color;
     private double precio;
     private String talla;
-    private Boton[] btn;
+    private Boton[] btns;
+
+    // Constructor
+    public Camisa(String color, double precio, String talla, Boton[] btns) {
+        this.color = color;
+        this.precio = precio;
+        this.talla = talla;
+        this.btns = btns;
+    }
 
     // Color
     public String getColor() {
@@ -31,12 +39,22 @@ public class Camisa {
     }
 
     // Botón
-    public Boton[] getBtn() {
-        return btn;
+    public Boton[] getBtns() {
+        return btns;
     }
-    public void setBtn(Boton[] btn) {
-        this.btn = btn;
+    public void setBtns(Boton[] btn) {
+        this.btns = btn;
     }
 
-    
+    // Metodo mostrar Botones
+    int contador = 0;
+    public void mostrarBotones(Boton[] btns) {
+        for (Boton botones : btns) {
+            contador++;
+            System.out.println("Botón " + contador + ":");
+            System.out.println("\tColor botón: " + botones.getColor());
+            System.out.println("\tForma botón: " + botones.getForma());
+            System.out.println("\tTamaño botón: " +botones.getTamanio());
+        }
+    }
 }

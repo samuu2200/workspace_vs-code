@@ -6,6 +6,13 @@ public class Boton {
     private String tamanio;
     private String forma;
 
+    // Constructor
+    public Boton(String color, String tamanio, String forma) {
+        this.color = color;
+        this.tamanio = tamanio;
+        this.forma = forma;
+    }
+
     // Getter & Setter
     public String getColor() {
         return color;
@@ -27,4 +34,5 @@ public class Boton {
     public void setForma(String forma) {
         this.forma = forma;
     }
+
 }

@@ -6,6 +6,13 @@ public class Pantalon {
     private String talla;
     private Boton btn;
 
+    public Pantalon(String color, double precio, String talla, Boton btn) {
+        this.color = color;
+        this.precio = precio;
+        this.talla = talla;
+        this.btn = btn;
+    }
+    
     // Getter & Setter
     // Color
     public String getColor() {
