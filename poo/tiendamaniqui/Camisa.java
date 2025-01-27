@@ -47,8 +47,8 @@ public class Camisa {
     }
 
     // Metodo mostrar Botones
-    int contador = 0;
     public void mostrarBotones(Boton[] btns) {
+        int contador = 0;
         for (Boton botones : btns) {
             contador++;
             System.out.println("Botón " + contador + ":");

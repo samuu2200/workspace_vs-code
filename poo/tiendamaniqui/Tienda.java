@@ -6,7 +6,6 @@ public class Tienda {
     private String nombre;
     private Maniqui[] maniquies;
 
-
     // Constructor
     public Tienda(String nombre) {
         this.nombre = nombre;
@@ -16,6 +15,7 @@ public class Tienda {
     public String getNombre() {
         return nombre;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -23,6 +23,7 @@ public class Tienda {
     public Maniqui[] getManiqui() {
         return maniquies;
     }
+
     public void setManiqui(Maniqui[] maniquies) {
         this.maniquies = maniquies;
     }
@@ -69,22 +70,22 @@ public class Tienda {
         System.out.println("La tienda " + nombre + " está abierta");
     }
 
-    public void mostrarEscaparate() {
+    public void mostrarEscaparate() { 
         // Mostrar la información de cada maniqui y el precio total
         System.out.println("Mostrando escaparate de la tienda " + nombre);
-        
+
         for (Maniqui maniqui : maniquies) {
             if (maniqui.getCamisa() != null) {
                 System.out.println("\n- Camisa: " + maniqui.getCamisa().getColor() +
-                                    " (Precio: " + maniqui.getCamisa().getPrecio() + ")");
+                        " (Precio: " + maniqui.getCamisa().getPrecio() + ")");
             }
             if (maniqui.getPantalon() != null) {
                 System.out.println("\n- Pantalón: " + maniqui.getPantalon().getColor() +
-                                    " (Precio: " + maniqui.getPantalon().getPrecio() + ")");
+                        " (Precio: " + maniqui.getPantalon().getPrecio() + ")");
             }
             if (maniqui.getVestido() != null) {
                 System.out.println("\n- Vestido: " + maniqui.getVestido().getColor() +
-                                    " (Precio: " + maniqui.getVestido().getPrecio() + ")");
+                        " (Precio: " + maniqui.getVestido().getPrecio() + ")");
             }
 
             double precioTotal = 0;
@@ -108,10 +109,9 @@ public class Tienda {
             maniqui.setPantalon(null);
             maniqui.setVestido(null);
         }
-        
-        System.out.println("Maniquíes desvetidos. ¡Tienda cerrada!");
-         
-    }
 
+        System.out.println("Maniquíes desvetidos. ¡Tienda cerrada!");
+
+    }
 
 }
