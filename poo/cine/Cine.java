@@ -1,12 +1,12 @@
 package poo.cine;
 
 public class Cine {
-    
+    // Variables de instancia
     private String nombre;
-    private int[] salas;
+    private Sala[] salas;
 
     // Constructor
-    public Cine(String nombre, int[] salas) {
+    public Cine(String nombre, Sala[] salas) {
         this.nombre = nombre;
         this.salas = salas;
     }
@@ -18,10 +18,10 @@ public class Cine {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public int[] getSalas() {
+    public Sala[] getSalas() {
         return salas;
     }
-    public void setSalas(int[] salas) {
+    public void setSalas(Sala[] salas) {
         this.salas = salas;
     }
 
