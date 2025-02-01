@@ -1,7 +1,9 @@
 package poo.cine;
 
+import poo.Utilidades;
+
 public class Cine {
-    // Variables de instancia
+    // Atributos
     private String nombre;
     private Sala[] salas;
 
@@ -15,15 +17,21 @@ public class Cine {
     public String getNombre() {
         return nombre;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
     public Sala[] getSalas() {
         return salas;
     }
+
     public void setSalas(Sala[] salas) {
         this.salas = salas;
     }
-
     
+    @Override
+    public String toString() {
+        return "Cine: " + nombre + " con " + salas.length + " salas.";
+    }
 }
